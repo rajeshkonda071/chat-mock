@@ -1,0 +1,16 @@
+{
+  "sessions": [
+    {
+      "sessionId": "sess-001",
+      "title": "React Best Practices",
+      "createdAt": "2025-11-15T10:00:00Z",
+      "updatedAt": "2025-11-15T10:30:00Z"
+    },
+    {
+      "sessionId": "sess-002",
+      "title": "JavaScript Performance",
+      "createdAt": "2025-11-14T15:20:00Z",
+      "updatedAt": "2025-11-14T16:00:00Z"
+    }
+  ]
+}

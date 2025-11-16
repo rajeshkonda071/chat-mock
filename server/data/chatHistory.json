@@ -1,0 +1,40 @@
+{
+  "sess-001": [
+    {
+      "messageId": "msg-001",
+      "question": "What are the best practices for React components?",
+      "answer": "React best practices include proper component composition, memoization, avoiding prop drilling, and using hooks correctly.",
+      "tableData": [
+        {"practice": "Use Functional Components", "description": "Modern approach over class components", "importance": "High"},
+        {"practice": "Memoization", "description": "Prevent unnecessary re-renders with React.memo", "importance": "High"},
+        {"practice": "Custom Hooks", "description": "Reuse logic across components", "importance": "Medium"},
+        {"practice": "Context API", "description": "Avoid prop drilling for state management", "importance": "High"}
+      ],
+      "timestamp": "2025-11-15T10:05:00Z"
+    },
+    {
+      "messageId": "msg-002",
+      "question": "How do I optimize performance?",
+      "answer": "Use code splitting, lazy loading, and proper state management to optimize React applications.",
+      "tableData": [
+        {"technique": "Code Splitting", "benefit": "Load only required JavaScript", "impact": "High"},
+        {"technique": "Lazy Loading", "benefit": "Defer component loading until needed", "impact": "Medium"},
+        {"technique": "Virtualization", "benefit": "Render only visible list items", "impact": "High"}
+      ],
+      "timestamp": "2025-11-15T10:30:00Z"
+    }
+  ],
+  "sess-002": [
+    {
+      "messageId": "msg-003",
+      "question": "What impacts JavaScript performance?",
+      "answer": "Key factors include DOM manipulation frequency, algorithm efficiency, memory management, and network requests.",
+      "tableData": [
+        {"factor": "DOM Operations", "description": "Minimize reflows and repaints", "costLevel": "High"},
+        {"factor": "Algorithms", "description": "Use efficient sorting and searching", "costLevel": "Medium"},
+        {"factor": "Memory Leaks", "description": "Clean up event listeners and timers", "costLevel": "High"}
+      ],
+      "timestamp": "2025-11-14T15:25:00Z"
+    }
+  ]
+}

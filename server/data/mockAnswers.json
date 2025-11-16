@@ -1,0 +1,58 @@
+{
+  "answers": [
+    {
+      "id": 1,
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces with component-based architecture. It uses virtual DOM for efficient rendering.",
+      "tableData": [
+        {"feature": "Virtual DOM", "description": "Improves rendering performance", "status": "Core Feature"},
+        {"feature": "Component-based", "description": "Reusable UI components", "status": "Core Feature"},
+        {"feature": "Unidirectional Data Flow", "description": "Props flow from parent to child", "status": "Core Feature"},
+        {"feature": "Hooks API", "description": "Modern state management", "status": "Modern"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is Tailwind CSS?",
+      "answer": "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces without leaving your HTML.",
+      "tableData": [
+        {"advantage": "Utility-first approach", "benefit": "Fast development", "recommended": "Yes"},
+        {"advantage": "Customizable", "benefit": "Full design control", "recommended": "Yes"},
+        {"advantage": "Small bundle size", "benefit": "Faster load times", "recommended": "Yes"},
+        {"advantage": "Responsive design", "benefit": "Mobile-friendly by default", "recommended": "Yes"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How does Node.js work?",
+      "answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine, allowing server-side JavaScript execution with event-driven, non-blocking I/O.",
+      "tableData": [
+        {"aspect": "Event Loop", "description": "Handles asynchronous operations", "performance": "Excellent"},
+        {"aspect": "Non-blocking I/O", "description": "Handles multiple requests efficiently", "performance": "Excellent"},
+        {"aspect": "npm ecosystem", "description": "Largest package repository", "performance": "Good"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is Express.js?",
+      "answer": "Express is a minimal and flexible Node.js web application framework providing a robust set of features for web and mobile applications.",
+      "tableData": [
+        {"feature": "Routing", "use": "Define API endpoints", "level": "Essential"},
+        {"feature": "Middleware", "use": "Process requests", "level": "Essential"},
+        {"feature": "Static files", "use": "Serve frontend assets", "level": "Important"},
+        {"feature": "Error handling", "use": "Manage errors gracefully", "level": "Important"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What are responsive design principles?",
+      "answer": "Responsive design ensures websites work well on all devices through flexible layouts, flexible images, and media queries.",
+      "tableData": [
+        {"principle": "Flexible Grid Layouts", "description": "Use percentage-based widths", "importance": "Critical"},
+        {"principle": "Flexible Media", "description": "Images scale with containers", "importance": "Critical"},
+        {"principle": "Media Queries", "description": "Apply styles for different screen sizes", "importance": "Critical"},
+        {"principle": "Mobile-First", "description": "Design for mobile then enhance", "importance": "High"}
+      ]
+    }
+  ]
+}
