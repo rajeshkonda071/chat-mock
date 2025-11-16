@@ -21,7 +21,16 @@ jobs:
           RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         run: |
           echo "Triggering deploy for Render service $RENDER_SERVICE_ID"
-          curl -X POST "https://api.render.com/v1/services/${RENDER_SERVICE_ID}/deploys" \
+          # POST to Render API, save response body and HTTP status
+          HTTP_STATUS=$(curl -s -o response.json -w "%{http_code}" -X POST "https://api.render.com/v1/services/${RENDER_SERVICE_ID}/deploys" \
             -H "Authorization: Bearer ${RENDER_API_KEY}" \
             -H "Content-Type: application/json" \
-            -d '{}'
+            -d '{}')
+          echo "HTTP status: $HTTP_STATUS"
+          echo "Response body:" && cat response.json
+          # Accept 201 (created) or 200 (ok). Fail otherwise so Actions marks the run as failed.
+          if [ "$HTTP_STATUS" != "201" ] && [ "$HTTP_STATUS" != "200" ]; then
+            echo "Render deploy trigger failed with status $HTTP_STATUS"
+            exit 1
+          fi
+          echo "Render deploy triggered successfully."
