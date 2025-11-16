@@ -6,6 +6,14 @@ Your ChatGPT-style application is fully built and ready to use. Here's what you 
 
 ---
 
+**Live URLs**
+
+- Backend (Render): https://chat-mock-1.onrender.com
+- Frontend (Vercel): https://chat-mock-eta.vercel.app/
+
+
+---
+
 ## 📁 Project Structure
 
 ```
